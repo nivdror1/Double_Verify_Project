@@ -1,0 +1,10 @@
+{% extends "app/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="content-section">
+        <h2>Choose the long int arithmetic you would like to perform:</h2>
+    </div>
+    <a class="nav-item nav-link" href="{% url 'add' %}">Add</a>
+    <a class="nav-item nav-link" href="{% url 'multiply' %}">Multiply</a>
+
+{% endblock content %}
